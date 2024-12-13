@@ -1,0 +1,255 @@
+/* Colors */
+:root {
+  --primary-color: #f42e16; /* Claro */
+  --secondary-color: #df2211;
+  --tertiary-color: #ca170b;
+  --quartenary-color: #b40b06;
+  --quinary-color: #9f0000; /* Escuro */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 90vh;
+}
+
+/* Navegação */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 70px;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: 80px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  padding: 20px;
+}
+
+.nav-list li a:hover {
+  color: #fff;
+}
+
+/* Seção Principal */
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+/* Carrossel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.carousel img.active {
+  position: absolute;
+  top: 80px;
+  opacity: 2;
+  z-index: 2;
+  height: 250px;
+}
+
+#static-img1 {
+  z-index: 1;
+  opacity: 1; /* Sempre visível */
+}
+
+#static-img3 {
+  z-index: 3;
+  opacity: 1; /* Sempre visível */
+}
+
+/* buttons */
+
+.arrows {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+}
+
+#prev-arrow {
+  font-size: 60px;
+  color: var(--secondary-color);
+  margin-left: 340px;
+}
+
+#next-arrow {
+  font-size: 60px;
+  color: var(--secondary-color);
+  margin-right: 340px;
+}
+
+/* main */
+
+
+#main-container {
+  width: 100%;
+  height: 90vh; /* Ajuste a altura conforme necessário */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+/* texto slogan */
+#slogan {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.text-container {
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  user-select: none;
+  
+}
+
+.text-container p {
+  font-size: 35px;
+  color: var(--primary-color);
+  font-weight: bold;
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  padding: 10px;
+  
+}
+
+.text-container p:hover {
+  font-size: 35px;
+  color: var(--primary-color);
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  color: #d5d5d5;
+}
+
+/* trilha */
+.trail-one {
+  position: absolute;
+  top: 85px;
+  left: 400px;
+  user-select: none;
+}
+
+.trail {
+  height: 200px;
+  width: 350px;
+}
+
+/* Perfil de texto */
+.profile-text {
+  display: flex;
+  justify-content: center;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Ajusta a distância entre a trilha e o texto */
+}
+
+.profile-text h3 {
+  font-size: 30px;
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  top: 300px;
+  white-space: pre-line;
+}
+
+/* cards */
+
+.cards-container {
+  position: relative;
+  height: 500px;
+  overflow: hidden; 
+  display: block;
+}
+
+.background-image {
+  position: absolute;
+  top: 400px;
+  left: 250px;
+  object-fit: cover;
+  z-index: 2; 
+  width: 70%;
+}
+
+#differences{
+  position: absolute;
+  top: 940px;
+  text-align: center;
+  display: block;
+}
+
+.img-differences{
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  position: relative;
+  height: 500px;
+  overflow: hidden; 
+  display: block;
+
+}
+
+.container-info{
+  height: 500px;
+}
