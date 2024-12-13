@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheep</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="fundo">
+      <section id="nav-section">
+        <nav class="nav">
+          <img src="img1" alt="Logo" class="logo" />
+          <ul class="nav-list">
+            <li><a href="">inicio</a></li>
+            <li><a href="">quem somos</a></li>
+            <li><a href="">sobre</a></li>
+            <li><a href="">contato</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section id="header">
+        <button class="arrows">
+          <span class="material-symbols-outlined" id="prev-arrow">
+            keyboard_double_arrow_left
+          </span>
+        </button>
+        <div class="carousel" id="carousel">
+          <img src="./src/img/header/Trás.png" alt="Image 1" id="static-img1" />
+          <!-- Imagem fixa -->
+          <img
+            src="./src/img/header/ContainerVermelho.png"
+            alt="Image 2"
+            id="dynamic-img"
+            class="active"
+          />
+          <!-- Imagem dinâmica -->
+          <img
+            src="./src/img/header/Frente.png"
+            alt="Image 3"
+            id="static-img3"
+          />
+          <!-- Imagem fixa -->
+        </div>
+        <button class="arrows">
+          <span class="material-symbols-outlined" id="next-arrow">
+            double_arrow
+          </span>
+        </button>
+      </section>
+    </header>
+
+    <main id="main-container">
+      <section id="first-content">
+        <div class="white-trasition"></div>
+        <div class="text-container">
+          <p>SOMOS O SEU ACESSO AO MERCADO INTERNACINAL.</p>
+        </div>
+        <div class="trail-one">
+          <img src="./src/img/coluna02/trilha.png" alt="trilha" class="trail" />
+        </div>
+        <div class="profile-text">
+          <h3>PERFIS DE EMPRESAS QUE PRECISAM DOS NOSSOS SERVIÇOS</h3>
+        </div>
+      </section>
+      <section id="cards-container">
+        <img
+          src="./src/img/coluna02/janelaatt.png"
+          alt="janela"
+          class="background-image"
+        />
+      </section>
+    </main>
+    <script src="./src/js/scripts.js"></script>
+  </body>
+</html>
